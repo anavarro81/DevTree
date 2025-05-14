@@ -1,4 +1,6 @@
 import { Outlet } from "react-router-dom"
+import { Toaster} from 'sonner'
+
 
 const AuthLayout = () => {
   return (
@@ -11,7 +13,8 @@ const AuthLayout = () => {
             </div>
         </div>
       </div>
-
+      {/* Indicamos donde se mostrar el mensaje para el usuario */}
+      <Toaster/>
     </>
   )
 }
